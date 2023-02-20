@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <form>
+        <div class="my-3">
+          <label for="ProductName"> Product Name:</label>
+          <input type="text" class="form-control" id="ProductName" />
+        </div>
+        <div class="my-3">
+          <label for="ProductPrice"> Product Price:</label>
+          <input type="number" class="form-control" id="ProductPrice" />
+        </div>
+        <div class="my-3" >
+          <label for="ProductCategory" > Product Category:</label>
+          <select class="form-select"id="ProductCategory" id="">
+            <option value="tv">Tv</option>
+            <option value="mobile">mobile</option>
+            <option value="laptop">laptop</option>
+          </select>
+        </div>
+        <div class="my-3">
+          <label for="ProductDescription"> Product Description:</label>
+          <textarea class="form-control" name="" id="ProductDescription" cols="10" rows="10">
+          </textarea>
+        </div>
+      </form>
+      <button type="button" onclick="addProduct()"class="btn btn-outline-info" id="aproduct">Add Product</button>
+      <button type="button" class="btn btn-outline-danger"onclick="clearform()">Clear Form</button>
+      <button type="button" style="display:none;"class="btn btn-outline-info" id="edit" onclick="edit()">Edit</button>
+      
+    </section>
+    <div class="container my-5 ">
+        <input placeholder="Search" onkeyup="search()" class="form-control w-50 mx-auto" id="Search">
+
+        <table class="table my-5 text-center">
+            <thead>
+                <tr>
+                    <th>
+                        Index
+                    </th>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>
+                        Product Price
+                    </th>
+                    <th>
+                        Product Category
+                    </th>
+                    <th>
+                        Product Description
+                    </th>
+                    <th>
+                        Update
+                    </th>
+                    <th>
+                        Delete
+                    </th>
+                </tr>
+
+                </thead>
+                <tbody id="tablebody">
+                    
+
+                </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
