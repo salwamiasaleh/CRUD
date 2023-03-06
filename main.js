@@ -1,6 +1,6 @@
 var ProductNameInput= document.getElementById("ProductName")
 var ProductPriceInput= document.getElementById("ProductPrice")
-var ProductCategoryInput= document.getElementById("ProductDescription")
+var ProductCategoryInput= document.getElementById("ProductCategory")
 var ProductDescriptionInput = document.getElementById("ProductDescription")
 var searchInput = document.getElementById("Search")
 var ProductList
